@@ -1,0 +1,7 @@
+<%= form_tag({controller: "coupons", action: "create"}, method:"post") do %>
+  Coupon Form
+  <%= text_field_tag(:coupon_code) %>
+  <%= text_field_tag(:store) %>
+  <%= submit_tag("Submit Coupon") %>
+
+<% end %>
